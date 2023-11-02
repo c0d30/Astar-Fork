@@ -10,6 +10,8 @@ concurrency:
 jobs:
   coverage_test:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
     - name: Add Coverage PR Comment
       uses: marocchino/sticky-pull-request-comment@v2
